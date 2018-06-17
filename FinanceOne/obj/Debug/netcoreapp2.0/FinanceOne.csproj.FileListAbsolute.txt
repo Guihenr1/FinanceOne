@@ -1,0 +1,11 @@
+C:\Users\guilh\Desktop\VB\C# e WEB\cursoUdemy\FinanceOne\bin\Debug\netcoreapp2.0\FinanceOne.deps.json
+C:\Users\guilh\Desktop\VB\C# e WEB\cursoUdemy\FinanceOne\bin\Debug\netcoreapp2.0\FinanceOne.runtimeconfig.json
+C:\Users\guilh\Desktop\VB\C# e WEB\cursoUdemy\FinanceOne\bin\Debug\netcoreapp2.0\FinanceOne.runtimeconfig.dev.json
+C:\Users\guilh\Desktop\VB\C# e WEB\cursoUdemy\FinanceOne\bin\Debug\netcoreapp2.0\FinanceOne.dll
+C:\Users\guilh\Desktop\VB\C# e WEB\cursoUdemy\FinanceOne\bin\Debug\netcoreapp2.0\FinanceOne.pdb
+C:\Users\guilh\Desktop\VB\C# e WEB\cursoUdemy\FinanceOne\obj\Debug\netcoreapp2.0\FinanceOne.csprojResolveAssemblyReference.cache
+C:\Users\guilh\Desktop\VB\C# e WEB\cursoUdemy\FinanceOne\obj\Debug\netcoreapp2.0\FinanceOne.csproj.CoreCompileInputs.cache
+C:\Users\guilh\Desktop\VB\C# e WEB\cursoUdemy\FinanceOne\obj\Debug\netcoreapp2.0\FinanceOne.AssemblyInfoInputs.cache
+C:\Users\guilh\Desktop\VB\C# e WEB\cursoUdemy\FinanceOne\obj\Debug\netcoreapp2.0\FinanceOne.AssemblyInfo.cs
+C:\Users\guilh\Desktop\VB\C# e WEB\cursoUdemy\FinanceOne\obj\Debug\netcoreapp2.0\FinanceOne.dll
+C:\Users\guilh\Desktop\VB\C# e WEB\cursoUdemy\FinanceOne\obj\Debug\netcoreapp2.0\FinanceOne.pdb
