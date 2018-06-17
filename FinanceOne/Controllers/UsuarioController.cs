@@ -3,14 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FinanceOne.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FinanceOne.Controllers
 {
     public class UsuarioController : Controller
     {
-        public IActionResult Login()
+        [HttpGet]
+        public IActionResult Login(int? id)
         {
+            if(id != null)
+            {
+                if(id == 0)
+                {
+                    HttpContext.Session.SetString("IdUsuarioLogado", string.Empty);
+                    HttpContext.Session.SetString("NomeUsuarioLogado", string.Empty);
+                }
+            }
             return View();
         }
 
@@ -20,6 +30,8 @@ namespace FinanceOne.Controllers
             bool login = usuario.ValidarLogin();
             if (login)
             {
+                HttpContext.Session.SetString("NomeUsuarioLogado", usuario.Nome);
+                HttpContext.Session.SetString("IdUsuarioLogado", usuario.Id.ToString());
                 return RedirectToAction("index", "Home");
             }
             else
