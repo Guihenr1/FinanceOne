@@ -42,8 +42,17 @@ namespace FinanceOne.Controllers
         }
 
         [HttpPost]
-        [HttpGet]
         public IActionResult Registrar(UsuarioModel usuario)
+        {
+            if (ModelState.IsValid)
+            {
+                //Registrar o usuario
+            }
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult Registrar()
         {
             return View();
         }
