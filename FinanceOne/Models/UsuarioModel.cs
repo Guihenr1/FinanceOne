@@ -22,7 +22,7 @@ namespace FinanceOne.Models
         public string Senha { get; set; }
 
         [Required(ErrorMessage = "informe sua data de nascimento!")]
-        public DateTime Data_Nascimento { get; set; }
+        public string Data_Nascimento { get; set; }
                 
         public bool ValidarLogin()
         {
@@ -36,11 +36,19 @@ namespace FinanceOne.Models
                 {
                     Id = int.Parse(dt.Rows[0]["ID"].ToString());
                     Nome = dt.Rows[0]["NOME"].ToString();
-                    Data_Nascimento = DateTime.Parse(dt.Rows[0]["DATA_NASCIMENTO"].ToString());
+                    Data_Nascimento = dt.Rows[0]["DATA_NASCIMENTO"].ToString();
                     return true;
                 }
             }
             return false;
+        }
+
+        public void RegistrarUsuario()
+        {
+            string dataNascimento = DateTime.Parse(Data_Nascimento).ToString("yyyy/MM/dd");
+            string sql = $"INSERT INTO USUARIO (NOME, EMAIL, SENHA, DATA_NASCIMENTO) VALUES ('{Nome}','{Email}','{Senha}','{dataNascimento}')";
+            DAL objDAL = new DAL();
+            objDAL.ExecutarComandoSQL(sql);
         }
     }
 }
