@@ -32,7 +32,7 @@ namespace FinanceOne.Controllers
             {
                 HttpContext.Session.SetString("NomeUsuarioLogado", usuario.Nome);
                 HttpContext.Session.SetString("IdUsuarioLogado", usuario.Id.ToString());
-                return RedirectToAction("index", "Home");
+                return RedirectToAction("Menu", "Home");
             }
             else
             {
