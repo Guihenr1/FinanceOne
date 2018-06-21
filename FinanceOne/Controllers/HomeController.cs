@@ -41,5 +41,10 @@ namespace FinanceOne.Controllers
         {
             return View();
         }
+
+        public IActionResult Ajuda()
+        {
+            return View();
+        }
     }
 }
