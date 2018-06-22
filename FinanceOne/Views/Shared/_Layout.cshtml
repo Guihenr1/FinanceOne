@@ -75,6 +75,7 @@
     <script>
         function CarregarUsuarioLogado() {
             var nome = '@HttpContextAccessor.HttpContext.Session.GetString("NomeUsuarioLogado")';
+
             if (nome != "") {
                 var divNome = document.getElementById("NomeUsuarioLogado");
                 divNome.innerHTML = "Olá " + nome + " <a href='../Usuario/Login/0'>(Sair)</a>";
